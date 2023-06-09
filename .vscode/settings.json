@@ -1,0 +1,38 @@
+{
+    "files.exclude": {
+        "**/.git": false
+    },
+    "restoreTerminals.terminals": [
+        {
+          "splitTerminals": [
+            {
+              "name": "docker-compose",
+              "commands": ["cd ..", "cd docker-compose", "clear"]
+            },
+          ]
+        },
+        {
+          "splitTerminals": [
+            {
+              "name": "api",
+              "commands": ["cd ..", "cd api", "clear"]
+            },
+          ]
+        },
+        {
+          "splitTerminals": [
+            {
+              "name": "ui",
+              "commands": [
+                    "cd ..",
+                    "cd ui",
+                    "xdotool key ctrl+shift+c && xdotool type 'cyan' && xdotool key Return && sleep .2",
+                    "xdotool key ctrl+Page_Up && xdotool key ctrl+shift+c && xdotool type 'green' && xdotool key Return && sleep .2",
+                    "xdotool key ctrl+Page_Up && xdotool key ctrl+shift+c && xdotool type 'yellow' && xdotool key Return",
+                    "clear"
+                ]
+            },
+          ]
+        }
+      ],
+}
